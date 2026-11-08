@@ -1,0 +1,160 @@
+abbr {
+   font-style: italic;
+}
+
+body, header, footer{
+    background-color: #F9FAFB;
+    color: #0B3C5D;
+}
+
+main {
+   background-color:  #FFFFFF;
+   max-width: 1200px;
+   margin: 0 auto;
+
+}
+
+body {
+    font-family: serif;
+    font-size: 16px;
+    padding: 20px 0;
+    margin: 0;
+}
+    .quote-box {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.quote-author {
+    display: block;
+    text-align: right;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+
+footer a {
+     color: #2E8B57;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #F9A826;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+ul.protection-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+
+ul.protection-list li {
+    margin-top: 12px;
+    line-height: 1.5;
+    margin-left: 30px;
+}
+
+.protection-label {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 240px;
+    font-weight: normal;
+    padding: 4px 10px;
+    margin-bottom: 12px;
+}
+
+.protection-text {
+    margin-left: 30px;
+}
+
+.page-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px ;
+    border: 2px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+.header-container .logo {
+    max-width: 300px;
+    width: auto;
+    margin-left: 0;
+}
+
+header h1 {
+    color: #0B3C5D;
+    font-family: sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+.reference-list {
+    list-style: none;
+    padding-left: 0;
+     margin-left: 0;
+}
+
+.reference-list li {
+    margin-bottom: 12px;
+    text-align: left;
+    margin-left: 30px;
+    padding-left: 0;
+    text-indent: 0;
+
+}
+
+.ref-icon {
+   display: inline-block !important;
+    margin: 0;
+    margin-right: 8px;
+    width: 16px;
+    height: auto; 
+}
+
+p {
+    text-indent: 32px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h1,h2,h3 {
+ text-indent: 30px;
+}
