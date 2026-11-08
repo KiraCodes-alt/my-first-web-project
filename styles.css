@@ -1,34 +1,3 @@
-Your CSS is functional, but there are **four main issues** (a broken property syntax, duplicate rule conflicts, and missing mobile responsiveness) plus a few minor refinements worth fixing before publishing.
-
----
-
-### Key Edits Needed
-
-#### 1. Fix Invalid Syntax
-
-* **`border: 2px;`** in `.page-container`: This rule is invalid CSS because it is missing the border style and color. It will be ignored by browsers. Change it to `border: 2px solid transparent;` or `border: 2px solid #E5E7EB;` (or remove it if you didn't want a border).
-
-#### 2. Resolve Conflicting Container Widths
-
-* **`main` vs `.page-container`:** Your `.page-container` wraps the whole site and sets a max width of **900px**, but inside it, `main` sets a max width of **1200px**. The 1200px rule on `main` does nothing because its parent is capped at 900px. Removing `max-width: 1200px;` and `margin: 0 auto;` from `main` cleans up redundant layout math.
-
-#### 3. Improve Mobile Layout & Image Handling
-
-* **Header Flex Alignment:** `.header-container` uses `justify-content: space-between` with an image and an `h1`. On mobile screens, having an un-wrapped logo and title side-by-side can break or crush the text. Adding a media query helps stack them cleanly on smaller screens.
-* **Logo Image Rule:** `.ref-icon` uses `!important` to override your main `img` selector (`display: block`). Setting a dedicated scope for main content images keeps your code cleaner without needing `!important`.
-
-#### 4. Paragraph & Header Indentation Cleanup
-
-* **`text-indent` on Headers:** `h1, h2, h3` have `text-indent: 30px;`. `text-indent` is intended for paragraph first-line indents; on headers (especially right-aligned ones like `h1`), it can cause unexpected spacing offsets. Using `padding-left` or `margin-left` is cleaner.
-
----
-
-### Optimized `styles.css`
-
-Here is the cleaned-up version ready to save and commit to GitHub:
-
-```css
-/* Base Styles */
 body {
     font-family: Georgia, Cambria, serif;
     font-size: 16px;
